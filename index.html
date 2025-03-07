@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=auto">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Viewport Fit Cover Test</title>
 	<style>
 		* {
@@ -22,15 +22,13 @@
 			height: 100dvh; /* Ensures it covers the full viewport */
 			display: flex;
 			flex-direction: column;
-			padding-top: env(safe-area-inset-top);
-			padding-bottom: env(safe-area-inset-bottom);
 			
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<h1>Test: viewport-fit=auto</h1>
+		<h1>Test: no viewport</h1>
 		<p>Container is now fullscreen, even under the notch!</p>
 		<p>Content inside remains safe and visible.</p>
 	</div>
