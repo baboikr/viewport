@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>Viewport Fit Cover Example</title>
+	<title>Viewport Fit Cover Test</title>
 	<style>
 		body {
 			margin: 0;
 			padding: env(safe-area-inset-top) env(safe-area-inset-right) 
 			         env(safe-area-inset-bottom) env(safe-area-inset-left);
-			background-color: #f4f4f4;
+			background-color: #ffcc00;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -28,8 +28,9 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Hello, World!</h1>
-		<p>This page uses <code>viewport-fit=cover</code> and respects safe areas.</p>
+		<h1>Test: viewport-fit=cover</h1>
+		<p>If you're using an iPhone with a notch, this page should fully cover the screen.</p>
+		<p>The content should NOT be hidden under the notch or navigation bar.</p>
 	</div>
 </body>
 </html>
