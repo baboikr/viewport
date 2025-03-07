@@ -24,12 +24,16 @@
 			display: flex;
 			align-items: center;
 			flex-direction: column;
+			padding-top: env(safe-area-inset-top);
+			padding-bottom: env(safe-area-inset-bottom);
+			padding-left: env(safe-area-inset-left);
+			padding-right: env(safe-area-inset-right);
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<h1>Test: viewport-fit=cover</h1>
+		<h1>Test: viewport-fit=cover padding added</h1>
 		<p>Container is now fullscreen, even under the notch!</p>
 		<p>Content inside remains safe and visible.</p>
 	</div>
