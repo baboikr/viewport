@@ -5,12 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<title>Viewport Fit Cover Test</title>
 	<style>
-		@supports(padding:max(0px)) {
-			body, header, footer {
-				padding-left: min(0vmin, env(safe-area-inset-left));
-				padding-right: min(0vmin, env(safe-area-inset-right));
-			}
-		}
 		* {
 			box-sizing: border-box;
 			margin: 0;
@@ -35,7 +29,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Test: viewport-fit=cover @support</h1>
+		<h1>Test: viewport-fit=cover</h1>
 		<p>Container is now fullscreen, even under the notch!</p>
 		<p>Content inside remains safe and visible.</p>
 	</div>
